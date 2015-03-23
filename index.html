@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title> World As I see it </title>
 <link href="main.css" type="text/css" rel="stylesheet" />
+<script src="js/jquery.js" type="text/javascript"></script>    
 <script src="js/jquery.parallaxify.js" type="text/javascript"></script>
 
 </head>
@@ -11,19 +12,28 @@
 <body>
 
 <script>
- $('#rotational_content').parallaxify();
+$('document').ready(function (){
+	
+	 $('.rotational_content').parallaxify();
     // or globally
     $.parallaxify();
+    
+
+
+
+});
+
+    
 
 </script>
 
 
 <div id="menu">
 	<ul>
-    	<li>work</li>
-        <li>blog</li>
-        <li>about</li>
-        <li>contact</li>
+    	<li id="Workmenu" style="cursor:pointer;">work</li>
+        <li id="blogmenu" style="cursor:pointer;">blog</li>
+        <li id="aboutmenu" style="cursor:pointer;">about</li>
+        <li id="contactmenu" style="cursor:pointer;">contact</li>
         
     </ul>
 </div>
@@ -41,34 +51,62 @@
 
     </div>
     
-    <div data-parallaxify-range-x="100" data-parallaxify-range-y="50" id="rotational_content" style="position:absolute; top:200px; right:330px; color:#FFF;">
-            <p style="font-size:20px;">i play</p> 
+    <span >
+            <p data-parallaxify-range-x="100" data-parallaxify-range-y="50" class="rotational_content" style="position:absolute; top:200px; right:330px; color:#FFF;font-size:20px;">i </p>
+        <p data-parallaxify-range-x="100" data-parallaxify-range-y="50" class="rotational_content" style="position:absolute; top:200px; right:290px; color:#FFF;font-size:20px;">
+        play</p> 
 
 
-    </div>
+    </span>
     
-    <div data-parallaxify-range-x="100" data-parallaxify-range-y="50" id="rotational_content2" style="position:absolute; top:140px; right:180px; color:#FFF;">
-            <p style="font-size:52px;">i write</p> 
+    <span >
+        <p data-parallaxify-range-x="80" data-parallaxify-range-y="30" class="rotational_content" style="position:absolute; top:140px; right:250px; color:#FFF; font-size:52px;">i</p>
+        
+        <p data-parallaxify-range-x="80" data-parallaxify-range-y="30" class="rotational_content" style="position:absolute; top:140px; right:140px; color:#FFF; font-size:52px;">  write</p>
 
-    </div>
+    </span>
     
-    <div id="rotational_content3" style="position:absolute; top:190px; right:153px; color:#FFF;">
-            <p style="font-size:38px;">i read</p> 
-
-    </div>
-    <div id="rotational_content3" style="position:absolute; top:240px; right:270px; color:#FFF;">
-            <p style="font-size:28px;">i paint</p> 
-    </div>
+    <span >
+            <p data-parallaxify-range-x="60" data-parallaxify-range-y="30"  class="rotational_content" style="position:absolute; top:210px; right:172px; color:#FFF;font-size:38px;">i </p>
+        <p data-parallaxify-range-x="60" data-parallaxify-range-y="30"  class="rotational_content" style="position:absolute; top:210px; right:103px; color:#FFF;font-size:38px;">
+                read</p> 
+    </span>
     
-    <div id="rotational_content3" style="position:absolute; top:250px; right:180px; color:#FFF;">
-            <p style="font-size:36px;">i click</p> 
-
-    </div>
     
-    <div id="rotational_content3" style="position:absolute; top:310px; right:330px; color:#FFF;">
-            <p style="font-size:60px;">i code</p> 
+     <span >
+            <p data-parallaxify-range-x="100" data-parallaxify-range-y="50"  class="rotational_content" style="position:absolute; top:250px; right:302px; color:#FFF;font-size:12px;">i </p>
+        <p data-parallaxify-range-x="100" data-parallaxify-range-y="50"  class="rotational_content" style="position:absolute; top:250px; right:270px; color:#FFF;font-size:12px;">
+                dream</p> 
+    </span>
+    
+    <span >
+            <p data-parallaxify-range-x="100" data-parallaxify-range-y="50"  class="rotational_content" style="position:absolute; top:290px; right:232px; color:#FFF;font-size:14px;">i </p>
+        <p data-parallaxify-range-x="100" data-parallaxify-range-y="50"  class="rotational_content" style="position:absolute; top:290px; right:200px; color:#FFF;font-size:14px;">
+                love</p> 
+    </span>
+    
+    
+    
+    
+    <span >
+            <p data-parallaxify-range-x="10" data-parallaxify-range-y="50"  class="rotational_content" style="position:absolute; top:240px; right:270px; color:#FFF; font-size:28px;">i </p>
+        
+        <p data-parallaxify-range-x="10" data-parallaxify-range-y="50"  class="rotational_content" style="position:absolute; top:240px; right:210px; color:#FFF; font-size:28px;">paint </p>
+        
+    </span>
+    
+    <span>
+            <p  data-parallaxify-range-x="10" data-parallaxify-range-y="50"  class="rotational_content" style="position:absolute; top:280px; right:280px; color:#FFF;font-size:36px;">i </p>
+            <p  data-parallaxify-range-x="10" data-parallaxify-range-y="50"  class="rotational_content" style="position:absolute; top:280px; right:208px; color:#FFF;font-size:36px;">click</p> 
 
-    </div>
+    </span>
+    
+    <span >
+            <p data-parallaxify-range-x="20" data-parallaxify-range-y="10"  class="rotational_content" style="position:absolute; top:370px; right:560px; color:#FFF;font-size:60px;" >i </p>
+        <p data-parallaxify-range-x="20" data-parallaxify-range-y="10"  class="rotational_content" style="position:absolute; top:370px; right:450px; color:#FFF;font-size:60px;" >
+        code</p> 
+
+    </span>
     
     
         
