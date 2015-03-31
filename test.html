@@ -1,0 +1,190 @@
+  <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+      <title>OpenTok Test</title>
+      <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css" media="all" /> 
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.5.min.js" type="text/javascript"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js" type="text/javascript"></script>
+    </head>
+    <body onLoad="connect()">
+      <div id="links">
+             <input type="button" value="Connect" id ="connectLink" onClick="javascript:connect()" />
+             <input type="button" value="Disconnect" id ="disconnectLink" onClick="javascript:disconnect()" style="display:none" />
+             </div>
+      <div id="publisherContainer"></div>
+      <div id="subscribersContainer"></div>
+      <div id="signals"></div>
+    
+    <script src='http://static.opentok.com/webrtc/v2.2/js/TB.min.js'></script>
+    <script type="text/javascript" charset="utf-8">
+      // *** Fill the following variables using your own Project info from the Dashboard  ***
+      // ***                  (https://dashboard.tokbox.com/projects)                     ***
+    
+      var apiKey = '45192472';    // Replace with your own API key.
+      var sessionId = '2_MX40NTE5MjQ3Mn5-MTQyNzQzNDQ1Nzk5NH5aWFA2K3JTT1RtblFJWGZua1Q0bkdCQWl-fg'; // Replace with your generated session ID.
+      var token = 'T1==cGFydG5lcl9pZD00NTE5MjQ3MiZzaWc9NjAyZTc5NzA4YWIyNTBjMTRkMTBhZDlhZGU3M2YyOTc2NGZjZDMzMzpyb2xlPW1vZGVyYXRvciZzZXNzaW9uX2lkPTJfTVg0ME5URTVNalEzTW41LU1UUXlOelF6TkRRMU56azVOSDVhV0ZBMkszSlRUMVJ0YmxGSldHWnVhMVEwYmtkQ1FXbC1mZyZjcmVhdGVfdGltZT0xNDI3NDM0NTIzJm5vbmNlPTAuNTE3Mjk4NzkxMTczNzExNyZleHBpcmVfdGltZT0xNDMwMDI0NjQ5';     // Replace with your generated token (use Project Tools or an OpenTok server-side library)
+    
+      var session;
+	  var flag = false;
+    
+      // Un-comment the following to set automatic logging:
+      // OT.setLogLevel(OT.DEBUG);
+    
+      session = OT.initSession(apiKey, sessionId);
+    	
+      // Add event listeners to the session
+      session.on({
+        sessionDisconnected: function(event) {
+          // The user was disconnected from the Session. Any subscribers
+          // and publishers will automatically be removed from the dom.
+          show('connectLink');
+          hide('disconnectLink');
+          
+        },
+        streamCreated: function(event) {
+          // Subscribe to a new third-party stream in the session.
+              dialogbox();    
+		 
+			  
+			  if(dialogbox() == true){
+			  console.log('streamCreated');
+         var subOptions = {insertMode: 'append'};
+         session.subscribe(event.stream, 'subscribersContainer', subOptions);
+		  
+		  }
+		  
+		  
+		  
+        
+        
+        
+        },
+        
+        
+        
+        
+        signal: function(event) {
+          // A signal was received.
+          var signalsDiv = document.getElementById('signals');
+          var messageP = document.createElement('p');
+          messageP.innerHTML = event.data;
+          signalsDiv.appendChild(messageP);
+        }
+      });
+    
+      //--------------------------------------
+      //  LINK CLICK HANDLERS
+      //--------------------------------------
+    
+      function connect() {
+		          session.connect(token, function(error) {
+          if (error) {
+            alert(error.message);
+          } else {
+            show('disconnectLink');
+            hide('connectLink');
+          }
+        });
+      }
+    
+      function disconnect() {
+        session.disconnect();
+        hide('disconnectLink');
+        
+      }
+    
+    
+      //=---------------------------------------popup---
+      //----------------------------------------------
+  
+  
+
+  function ifyesClicked(){
+  console.log('this is yes');
+ 	flag=true;       
+  document.getElementById("response").innerHTML = "The user clicked on yes to call this function";
+  return true;
+  }
+      
+  function ifnoClicked(){
+  console.log('this is no');
+  flag=false;
+  document.getElementById("response").innerHTML = "The user clicked on no to call this function";
+  
+  }
+  
+   function dialogbox () {
+      $( "#dialog" ).dialog({
+      
+      buttons: {
+              "Yes": function () {
+                  ifyesClicked();
+                  $(this).dialog('close');
+                  clearInterval(counter);
+				  return 1;
+              },
+                  "No": function () {
+                  ifnoClicked();
+                  $(this).dialog('close');
+                  clearInterval(counter);
+				  return (0);
+              }
+          }
+      });
+      
+        
+        setTimeout(function(){
+          $("#dialog").dialog('close')
+        }, 30000);
+        
+        var count=30;
+  
+        var counter=setInterval(timer, 1000);
+  
+  function timer()
+  {
+    count=count-1;
+    if (count <= 0)
+    {
+       clearInterval(counter);
+       document.getElementById("timer").innerHTML ="Countdown ends";
+       return;
+    }
+  
+    document.getElementById("timer").innerHTML = count + " secs";
+  }
+}
+  
+  
+    
+      //--------------------------------------
+      //  HELPER METHODS
+      //--------------------------------------
+    
+      function show(id) {
+        document.getElementById(id).style.display = 'block';
+      }
+    
+      function hide(id) {
+        document.getElementById(id).style.display = 'none';
+      }
+    </script>
+    
+    <input type="button"  value="Initiate" onClick="dialogbox()">
+
+
+
+ 
+<div id="dialog" title="Basic dialog">
+  <p>This is test.</p>
+</div>    
+    
+<p id="timer"></p>
+
+<p id="response"></p>
+    
+    
+    </body>
+    </html>
+
