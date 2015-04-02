@@ -10,7 +10,7 @@ body
   font-family: 'Open Sans Light';
   font-style: normal;
   font-weight: 300;
-  src:url(fonts/OpenSans-Light.ttf);
+  src:url(fonts/ColabThi.otf);
 }
 
 
@@ -22,13 +22,16 @@ body
 	z-index:1000;
 }
 
-
+p
+{
+    line-height: 20px;
+}
 
 #menu li /*Styling the li part of the menu*/
 {
     float:left;
-	font-size:18px;
-    padding:4px 10px 4px 10px;
+	font-size:16px;
+    padding:4px 0px 4px 0px;
     display:inline-block;
     position:relative;
     text-align:center;
