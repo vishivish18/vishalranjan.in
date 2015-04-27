@@ -13,7 +13,7 @@ body
 ::-webkit-scrollbar-track-piece { background-color:#F0F0F0;}
 ::-webkit-scrollbar-thumb { height: 50px; background-color: #00BFFF; border-radius: 0px;}
 ::-webkit-scrollbar-corner { background-color: #999;}
-::-webkit-resizer { background-color: #666;}
+::-webkit-resizer { background-color: #665;}
 
 @font-face {
   font-family: 'Open Sans Light';
