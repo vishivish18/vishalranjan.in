@@ -17,9 +17,10 @@ body
 #menu
 {
 	right:0px;
-	top:3px;
+	top:-13px;
 	position:fixed;
 	z-index:1000;
+    
 }
 
 p
@@ -38,8 +39,8 @@ p
     margin-right:30px;
     margin-top:7px;
     border:none;
-	color:#000;
-    /*color:#CCCCCC;*/
+	color:#FFF;
+
 }
 
 #menu li a /*Styling the link part of the menu li*/
@@ -53,4 +54,12 @@ p
 {
     color:#FFF;
 	text-shadow:1px 1px 5px #6FF;
+}
+
+#myimage{
+border-radius: 50%;
+width: 400px;
+height: 400px; 
+background-color: red;
+background-image:url(images/download.png)
 }
