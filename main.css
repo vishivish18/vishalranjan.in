@@ -58,8 +58,14 @@ p
 
 #myimage{
 border-radius: 50%;
-width: 400px;
-height: 400px; 
-background-color: red;
-background-image:url(images/download.png)
+width: 250px;
+height: 250px; 
+background-image:url(images/about1.png);
+cursor: pointer;
+
+}
+
+#myimage:hover{
+background-image:url(images/about2.jpg);
+cursor: pointer;
 }
