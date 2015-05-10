@@ -6,7 +6,9 @@
 <link href="main.css" type="text/css" rel="stylesheet" />
 <script src="js/jquery.js" type="text/javascript"></script>    
 <script src="js/jquery.parallaxify.js" type="text/javascript"></script>
-
+<script src="js/jquery.localscroll-1.2.7-min.js" type="text/javascript"></script>
+<script src="js/jquery.scrollTo-1.4.2-min.js" type="text/javascript"></script>
+<script src="js/scroll.js"></script>
 </head>
 
 <body>
@@ -25,23 +27,13 @@ $('#logo').click(function (){
 								duration: 1000,
 								easing: 'linear'
 							});
+    
 	});
 
 
 
 
-
-
-		
-$('#homemenu').click(function (){
-	$('#home').ScrollTo({
-								duration: 1000,
-								easing: 'linear'
-							});
-	});
-
-
-$('#workmenu').click(function (){
+$('#projectsmenu').click(function (){
 	$('#work').ScrollTo({
 								duration: 1000,
 								easing: 'linear'
@@ -65,18 +57,7 @@ $('#contactmenu').click(function (){
 							});
 	});
 
-$('#up_arrow').click(function(){
-	$('#home').ScrollTo({
-								duration: 1000,
-								easing: 'linear'
-							});
-	
-	});
 
-	
-
-    
-    
    
 });
 
@@ -84,17 +65,17 @@ $('#up_arrow').click(function(){
 
 </script>
 
-<div id="menubar" style="height:40px;width:100%;background-color:#000;top:0px; z-index:99;position:fixed;">
-<div id="selector" style="background-color:#FFF;">
+<div id="menubar" style="height:40px;width:100%;background-color:#000;top:0px; z-index:1;position:fixed;">
+
 
 </div>
 
-<img id="logo" src="images/logo.png" width="30" height="30" style="cursor:pointer; position:absolute; left:10px; top:20px;"/>
+<img id="logo" src="images/logo.png" width="30" height="30" style="cursor:pointer; position:fixed; z-index:1; left:10px; top:20px;"/>
 <img src="images/Construction.png" style="position:absolute; left:-20px; top:11px;"/>    
 <ul id="menu">
-<li id="homemenu" style="cursor:pointer;">projects</li>
-<li id="workmenu" style="cursor:pointer;">about</li>
-<li id="aboutmenu" style="cursor:pointer;">blog</li>
+<li id="projectsmenu" style="cursor:pointer;">projects</li>
+<li id="aboutmenu" style="cursor:pointer;">about</li>
+<li id="blogmenu" style="cursor:pointer;">blog</li>
 <li id="contactmenu" style="cursor:pointer;">contact</li>
 </ul>
 </div>
@@ -227,7 +208,7 @@ Currently working on expanding this project further for a common stock mangement
     
 </table>
     
-    
+ <div style="height:100px;"></div>
 </div>
 <!--------------------------------------------------------->    
 <!--------------------------------------------------------->    
@@ -294,7 +275,7 @@ Currently working on expanding this project further for a common stock mangement
 <!-------------------CONTACT DIV STARTS------------------------->
 
 
-    
+<div id="contact">
     <table style="position:relative; left:100px;width:100%" border="0">
     <tr>
         <td><a href="https://github.com/vishivish18" target="_blank"><img src="images/github.png" width="100" height="100"></a></td>
@@ -309,7 +290,7 @@ Currently working on expanding this project further for a common stock mangement
 <div style="height:100px;"></div>
 <div style="height:400px;"></div>
     
-    
+</div>    
     
     
 <!--------------------------------------------------------->    
