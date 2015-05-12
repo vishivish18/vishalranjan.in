@@ -65,6 +65,10 @@ p
 	text-shadow:1px 1px 5px #6FF;
 }
 
+.workimages:hover{
+width:290px;
+}
+
 #myimage{
 border-radius: 50%;
 width: 190px;
