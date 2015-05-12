@@ -71,6 +71,11 @@ width:290px;
 cursor: pointer;
 }
 
+.contacticons:hover{
+padding-bottom: 5px;
+cursor: pointer;
+}
+
 #myimage{
 border-radius: 50%;
 width: 190px;
