@@ -71,6 +71,24 @@ width:290px;
 cursor: pointer;
 }
 
+.demo a
+{
+	color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 3px;
+    background:#2A9FFF;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.demo a:hover
+{
+	background:#333;
+	text-decoration:none;
+}
+
 .contacticons:hover{
 padding-bottom: 5px;
 cursor: pointer;
