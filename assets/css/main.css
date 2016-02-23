@@ -1,0 +1,39 @@
+/*Bootstrap Overrides*/
+
+.navbar-default {
+    background-color: #0084FF !important;
+    border: none !important;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white !important;
+}
+
+@font-face {
+    font-family: 'Open Sans Light';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+
+
+/*Global Definitions*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans Light" !important;
+    overflow-x: hidden;
+}
+
+
+/*individual styles*/
+
+#hero-image {
+    width: 100%;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
