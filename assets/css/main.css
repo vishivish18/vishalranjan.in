@@ -1,12 +1,12 @@
 /*Bootstrap Overrides*/
 
 .navbar-default {
-    background-color: #0084FF !important;
+    background-color: white !important;
     border: none !important;
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: white !important;
+    color: black !important;
 }
 
 @font-face {
@@ -31,9 +31,61 @@ body {
 
 #hero-image {
     width: 100%;
-    -webkit-filter: blur(3px);
+    /*-webkit-filter: blur(3px);
     -moz-filter: blur(5px);
     -o-filter: blur(5px);
     -ms-filter: blur(5px);
-    filter: blur(5px);
+    filter: blur(5px);*/
+}
+
+#sanepharma {
+    background: url(../images/sanepharmab.png);
+    height: 300px;
+    background-repeat: no-repeat;
+
+}
+
+#sanepharma:hover {
+    background: url(../images/sanepharmac.png);
+    height: 300px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#ttt {
+    background: url(../images/tttb.png);
+    height: 300px;
+    background-repeat: no-repeat;
+}
+
+#ttt:hover {
+    background: url(../images/tttcolored.png);
+    height: 300px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#mka {
+    background: url(../images/mkalogob.png);
+    height: 300px;
+    background-repeat: no-repeat;
+}
+
+#mka:hover {
+    background: url(../images/mkalogo2.png);
+    height: 300px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+#openflush {
+    background: url(../images/openflush.png);
+    height: 300px;
+    background-repeat: no-repeat;
+}
+
+#openflush:hover {
+    background: url(../images/openflush.png);
+    height: 300px;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
