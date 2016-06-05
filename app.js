@@ -6,12 +6,14 @@ var app = express();
 var path = require('path')
 
 
-app.set('views', __dirname + '/public/views')
+app.set('views', __dirname + '/public/views/partials')
 app.set('view engine', 'jade')
 app.use(express.static(path.resolve('public/assets/')))
 app.get('/', function(req, res) {
-    //res.sendFile(path.resolve('public/index.html'));
-    res.render('layout', { title: 'Home' })
+    res.render('landing', { title: 'Home' })
+});
+app.get('/projects', function(req, res) {
+    res.render('projects')
 });
 var port = process.env.PORT || 1805
 var server = app.listen(port, function() {

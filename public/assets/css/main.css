@@ -17,14 +17,23 @@ body {
     font-family: 'Raleway', sans-serif !important;
     overflow-x: hidden;
 }
-
+a {
+    text-decoration: none !important;
+}
 
 /*individual styles*/
 .menu{
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
-
+.menu:hover{
+   border-bottom: 1px solid #212121;
+   cursor: pointer; 
+   
+}
+.menu a {
+    color:#212121 !important;
+}
 .dotted{
     font-family: 'Raleway Dots', cursive !important; 
 }
