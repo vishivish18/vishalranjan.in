@@ -21,7 +21,7 @@ app.get('/about', function(req, res) {
 app.get('/contact', function(req, res) {
     res.render('contact')
 });
-var port = process.env.PORT || 1805
+var port = process.env.PORT || 1339
 var server = app.listen(port, function() {
     console.log('Magic happens at  ', port);
 });

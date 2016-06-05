@@ -27,15 +27,23 @@ a {
     text-transform: capitalize;
 }
 .menu:hover{
-   border-bottom: 1px solid #212121;
+   
    cursor: pointer; 
    
 }
 .menu a {
     color:#212121 !important;
 }
+.menu a:hover{
+    border-bottom: 1px solid #212121;
+}
 .dotted{
     font-family: 'Raleway Dots', cursive !important; 
+}
+.my-image:hover{
+ cursor: pointer;
+ -webkit-filter: grayscale(100%);
+filter: grayscale(100%);
 }
 
 
