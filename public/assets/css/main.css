@@ -1,0 +1,120 @@
+/*Bootstrap Overrides*/
+
+.navbar-default {
+    background-color: white !important;
+    border: none !important;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: black !important;
+}
+
+/*Global Definitions*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif !important;
+    overflow-x: hidden;
+}
+
+
+/*individual styles*/
+.menu{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.dotted{
+    font-family: 'Raleway Dots', cursive !important; 
+}
+
+
+#hero-image {
+    width: 100%;
+    /*-webkit-filter: blur(3px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);*/
+}
+
+#sanepharma {
+    background: url(../images/sanepharmab.png);
+    height: 300px;
+    background-repeat: no-repeat;
+}
+
+#sanepharma:hover {
+    background: url(../images/sanepharmac.png);
+    height: 300px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#ttt {
+    background: url(../images/tttb.png);
+    height: 300px;
+    background-repeat: no-repeat;
+}
+
+#ttt:hover {
+    background: url(../images/tttcolored.png);
+    height: 300px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#mka {
+    background: url(../images/mkalogob.png);
+    height: 300px;
+    background-repeat: no-repeat;
+}
+
+#mka:hover {
+    background: url(../images/mkalogo2.png);
+    height: 300px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#openflush {
+    background: url(../images/openflush.png);
+    height: 300px;
+    background-repeat: no-repeat;
+}
+
+#openflush:hover {
+    background: url(../images/openflush.png);
+    height: 300px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.textCenter {
+    text-align: center;
+    max-width: 800px;
+    padding-bottom: 4.5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.workGrid,
+.imageContainer {
+    text-align: center;
+}
+
+.workGridItem {
+    display: inline-block;
+    vertical-align: top;
+    width: 148px;
+    margin: 8px 7.5%;
+    position: relative;
+}
+
+.img {
+    display: inline-block !important;
+    max-width: none !important;
+    width: 120px !important;
+    /*height: 120px !important;*/
+}

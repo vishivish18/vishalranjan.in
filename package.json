@@ -1,0 +1,28 @@
+{
+  "name": "vishalranjan.in",
+  "version": "1.0.1",
+  "description": "my portfolio website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishivish18/vishalranjan.in.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "Website",
+    "Personal",
+    "Node"
+  ],
+  "author": "Vishal R",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishivish18/vishalranjan.in/issues"
+  },
+  "homepage": "https://github.com/vishivish18/vishalranjan.in#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
