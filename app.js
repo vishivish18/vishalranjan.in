@@ -15,6 +15,12 @@ app.get('/', function(req, res) {
 app.get('/projects', function(req, res) {
     res.render('projects')
 });
+app.get('/about', function(req, res) {
+    res.render('about')
+});
+app.get('/contact', function(req, res) {
+    res.render('contact')
+});
 var port = process.env.PORT || 1805
 var server = app.listen(port, function() {
     console.log('Magic happens at  ', port);
