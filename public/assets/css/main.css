@@ -39,11 +39,10 @@ a {
 }
 .dotted{
     font-family: 'Raleway Dots', cursive !important; 
+    font-weight: 700;
 }
 .my-image:hover{
  cursor: pointer;
- -webkit-filter: grayscale(100%);
-filter: grayscale(100%);
 }
 
 
