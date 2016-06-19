@@ -1,13 +1,16 @@
 /*Bootstrap Overrides*/
 
 .navbar-default {
-    background-color: white !important;
-    border: none !important;
+    background-color: rgba(255,255,255,0.98) !important;
+    -webkit-box-shadow: 0 6px 6px -6px #ccc;
+    -moz-box-shadow: 0 6px 6px -6px #ccc;
+    box-shadow: 0 6px 6px -6px #ccc;
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: black !important;
+    color: #95989A !important;
 }
+
 
 /*Global Definitions*/
 
@@ -17,34 +20,48 @@ body {
     font-family: 'Raleway', sans-serif !important;
     overflow-x: hidden;
 }
+
 a {
     text-decoration: none !important;
 }
 
+
 /*individual styles*/
-.menu{
+
+.menu {
     text-align: center;
     text-transform: capitalize;
-}
-.menu:hover{
-   
-   cursor: pointer; 
-   
-}
-.menu a {
-    color:#212121 !important;
-}
-.menu a:hover{
-    border-bottom: 1px solid #212121;
-}
-.dotted{
-    font-family: 'Raleway Dots', cursive !important; 
-    font-weight: 700;
-}
-.my-image:hover{
- cursor: pointer;
+
 }
 
+.menu:hover {
+    cursor: pointer;
+}
+
+.menu a {
+    color: #95989A !important;
+}
+
+.menu a:hover {
+    border-bottom: 1px solid #212121;
+}
+
+.dotted {
+    font-family: 'Raleway Dots', cursive !important;
+    font-weight: 700;
+}
+
+.my-image:hover {
+    cursor: pointer;
+}
+
+.top-buffer{
+    margin-top:70px;
+}
+.section-header{
+    font-size: 42px;
+    font-weight: 700;
+}
 
 #hero-image {
     width: 100%;

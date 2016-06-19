@@ -1,4 +1,12 @@
-.row(style='padding:30px;')
+extends ../layout.jade
+block content
+  include ./nav.jade
+  #page-top(style='text-align:center')
+    p.top-buffer.section-header CONTACT
+    p They say I am a dreamer...
+    p but I am not the only one - The Beatles
+
+    .row(style='padding:30px;')
       .col-xs-2
         
       .col-xs-2
@@ -13,3 +21,4 @@
       .col-xs-2
         a(href='mailto:me@vishalranjan.in?subject=Hello', target='_blank')
           i.fa.fa-envelope-o.contact(aria-hidden='true')
+
