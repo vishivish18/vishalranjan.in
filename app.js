@@ -21,6 +21,13 @@ app.get('/about', function(req, res) {
 app.get('/contact', function(req, res) {
     res.render('contact')
 });
+app.use(function(req, res, next) {
+  res.render('404')
+});
+app.use(function(err, req, res, next) {
+  console.error(err.stack);
+  res.status(500).send('Something broke!');
+});
 var port = process.env.PORT || 1339
 var server = app.listen(port, function() {
     console.log('Magic happens at  ', port);
