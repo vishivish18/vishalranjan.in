@@ -10,6 +10,9 @@
 .navbar-default .navbar-nav>li>a {
     color: #95989A !important;
 }
+.navbar-default .navbar-nav>li>a:hover {
+    color: #212121 !important;
+}
 
 
 /*Global Definitions*/
@@ -43,7 +46,8 @@ a {
 }
 
 .menu a:hover {
-    border-bottom: 1px solid #212121;
+    /*border-bottom: 1px solid #212121;*/
+    color:#212121 !important;
 }
 
 .dotted {
@@ -75,11 +79,10 @@ a {
 
 
 .contact{
-    font-size: 42px !important;
+    font-size: 20px !important;
 }
 
 .contact:hover{
-    font-size: 45px !important;
     color:#cccccc;
     cursor: pointer;;
 }
