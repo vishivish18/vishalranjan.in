@@ -10,19 +10,19 @@ app.set('views', __dirname + '/public/views/partials')
 app.set('view engine', 'jade')
 app.use(express.static(path.resolve('public/assets/')))
 app.get('/', function(req, res) {
-    res.render('landing', { title: 'Home' })
+    res.render('landing', { title: 'Vishal Ranjan | #Developer #Dreamer #Musician #Traveller #Reader #Writer' })
 });
 app.get('/projects', function(req, res) {
-    res.render('projects')
+    res.render('projects',{title: 'Projects | Vishal Ranjan'})
 });
 app.get('/about', function(req, res) {
-    res.render('about')
+    res.render('about',{title: 'About Me | Vishal Ranjan'})
 });
 app.get('/contact', function(req, res) {
     res.render('contact')
 });
 app.use(function(req, res, next) {
-  res.render('404')
+  res.render('404',{title: 'Oops ! | Vishal Ranjan'})
 });
 app.use(function(err, req, res, next) {
   console.error(err.stack);
