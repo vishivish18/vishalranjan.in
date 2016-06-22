@@ -1,7 +1,7 @@
 /*Bootstrap Overrides*/
 
 .navbar-default {
-    background-color: rgba(255,255,255,0.95) !important;
+    background-color: rgba(255, 255, 255, 0.95) !important;
     -webkit-box-shadow: 0 6px 6px -6px #ccc;
     -moz-box-shadow: 0 6px 6px -6px #ccc;
     box-shadow: 0 6px 6px -6px #ccc;
@@ -10,6 +10,7 @@
 .navbar-default .navbar-nav>li>a {
     color: #95989A !important;
 }
+
 .navbar-default .navbar-nav>li>a:hover {
     color: #212121 !important;
 }
@@ -34,7 +35,6 @@ a {
 .menu {
     text-align: center;
     text-transform: capitalize;
-
 }
 
 .menu:hover {
@@ -47,7 +47,7 @@ a {
 
 .menu a:hover {
     /*border-bottom: 1px solid #212121;*/
-    color:#212121 !important;
+    color: #212121 !important;
 }
 
 .dotted {
@@ -59,33 +59,49 @@ a {
     cursor: pointer;
 }
 
-.top-buffer{
-    margin-top:70px;
+.top-buffer {
+    margin-top: 70px;
 }
-.section-header{
+
+.section-header {
     font-size: 42px;
     font-weight: 700;
 }
+
+
 /* Project Section*/
-.project-title{
+
+.project-title {
     font-weight: 700;
     font-size: 22px;
 }
-.project-subtitle{
+
+.project-title a {
+    color: #212121 !important;
+}
+.project-title a:hover {
+    color: #ccc !important;
+}
+
+.project-subtitle {
     color: #95989A
 }
 
-
-
-
-.contact{
+.contact {
     font-size: 20px !important;
 }
 
-.contact:hover{
-    color:#cccccc;
-    cursor: pointer;;
+.contact:hover {
+    color: #cccccc;
+    cursor: pointer;
+    ;
 }
+
+.hyper {
+    color: #0084FF !important;
+    font-weight: 700;
+}
+
 #hero-image {
     width: 100%;
     /*-webkit-filter: blur(3px);

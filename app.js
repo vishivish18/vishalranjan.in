@@ -15,6 +15,27 @@ app.get('/', function(req, res) {
 app.get('/projects', function(req, res) {
     res.render('projects',{title: 'Projects | Vishal Ranjan'})
 });
+app.get('/projects/mka', function(req, res) {
+    res.render('./projects/mka',{title: 'Projects | MKA'})
+});
+app.get('/projects/open-flush', function(req, res) {
+    res.render('./projects/openflush',{title: 'Projects | Open Flush'})
+});
+app.get('/projects/sanepharma', function(req, res) {
+    res.render('./projects/sanepharma',{title: 'Projects | Sanepharma'})
+});
+app.get('/projects/mean-machine', function(req, res) {
+    res.render('./projects/meanmachine',{title: 'Projects | Mean Machine'})
+});
+app.get('/projects/trail-tracker', function(req, res) {
+    res.render('./projects/trailtracker',{title: 'Projects | Trail Tracker'})
+});
+app.get('/projects/ultimate-tic-tac-toe', function(req, res) {
+    res.render('./projects/tictactoe',{title: 'Projects | Ultimate Tic Tac Toe'})
+});
+app.get('/projects/snakes-and-ladders', function(req, res) {
+    res.render('./projects/snakesladders',{title: 'Projects | Snakes and Ladders'})
+});
 app.get('/about', function(req, res) {
     res.render('about',{title: 'About Me | Vishal Ranjan'})
 });
