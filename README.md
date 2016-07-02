@@ -9,5 +9,6 @@
 - [ ] Ultimate Tic Tac Toe
 - [ ] OTR-Chat
 - [ ] Open Flush
+- [ ] Youtube Controls
 - [ ] Turtle Love
 - [ ] ngSeries
