@@ -42,6 +42,12 @@ app.get('/about', function(req, res) {
 app.get('/contact', function(req, res) {
     res.render('contact')
 });
+app.get('/tech', function(req, res) {
+    res.render('tech',{title: 'Tech Stack | Vishal Ranjan'})
+});
+app.get('/blog', function(req, res) {
+    res.redirect('http://www.codelikeapainter.com')
+});
 app.use(function(req, res, next) {
   res.render('404',{title: 'Oops ! | Vishal Ranjan'})
 });
