@@ -183,6 +183,12 @@ a {
     margin: 8px 7.5%;
     position: relative;
 }
+.link{
+    padding-left: 10px;
+}
+.link:hover{
+    color:blue !important;
+}
 
 .img {
     display: inline-block !important;
