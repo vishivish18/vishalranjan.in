@@ -9,6 +9,8 @@ var path = require('path')
 app.set('views', __dirname + '/public/views/partials')
 app.set('view engine', 'jade')
 app.use(express.static(path.resolve('public/assets/')))
+app.use('/resume', express.static(__dirname + '/resume/'));
+
 app.get('/', function(req, res) {
     res.render('landing', { title: 'Vishal Ranjan | #Developer #Dreamer #Musician #Traveller #Reader #Writer' })
 });
