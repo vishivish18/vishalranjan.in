@@ -62,6 +62,9 @@ app.get('/tech', function(req, res) {
 app.get('/blog', function(req, res) {
     res.redirect('http://www.codelikeapainter.com')
 });
+app.get('/writings', function(req, res) {
+    res.redirect('http://www.codelikeapainter.com')
+});
 app.use(function(req, res, next) {
     res.render('404', { title: 'Oops ! | Vishal Ranjan' })
 });
