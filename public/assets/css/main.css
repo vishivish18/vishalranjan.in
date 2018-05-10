@@ -100,7 +100,36 @@ a {
 .hyper {
     color: #0084FF !important;
     font-weight: 700;
+    text-decoration: underline !important;
 }
+.hyper-muse {
+    color: #E94A55 !important;
+    font-weight: 700;
+    text-decoration: underline !important;
+}
+.hyper-cyber {
+    color: #F07531 !important;
+    font-weight: 700;
+    text-decoration: underline !important;
+}
+.hyper-jatana {
+    color: #1A67ED !important;
+    font-weight: 700;
+    text-decoration: underline !important;
+}
+.hyper-bs {
+    color: #FC0F3B  !important;
+    font-weight: 700;
+    text-decoration: underline !important;
+}
+.hyper-mango {
+    color: #50e218 !important
+    font-weight: 700;
+    text-decoration: underline !important;
+    /*text-shadow: 1px 1px rgba(0,0,0,0.3);*/
+}
+
+
 
 #hero-image {
     width: 100%;
