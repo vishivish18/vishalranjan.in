@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BOOKSHELF / THE INTELLIGENCE CURATOR</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;700;800&amp;family=Space+Grotesk:wght@700&amp;family=Inter:ital,wght@0,400;0,500;1,300&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {},
+                    fontFamily: {
+                        "headline": ["Public Sans", "sans-serif"],
+                        "body": ["Public Sans", "sans-serif"],
+                        "label": ["Public Sans", "sans-serif"],
+                        "space": ["Space Grotesk", "sans-serif"],
+                        "inter": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift {
+            background-color: rgba(249, 250, 251, 1);
+        }
+    </style>
+</head>
+<body class="bg-white text-black font-body selection:bg-indigo-100 antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-black/5 shadow-[0_40px_80px_-15px_rgba(0,0,0,0.04)]">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-extrabold tracking-tighter text-black font-space">
+                CURATOR
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-gray-500 hover:text-black transition-colors duration-300 font-inter font-500 uppercase tracking-[0.05em] text-xs" href="#">Content</a>
+<a class="text-gray-500 hover:text-black transition-colors duration-300 font-inter font-500 uppercase tracking-[0.05em] text-xs" href="#">Projects</a>
+<a class="text-gray-500 hover:text-black transition-colors duration-300 font-inter font-500 uppercase tracking-[0.05em] text-xs" href="#">Experience</a>
+<a class="text-gray-500 hover:text-black transition-colors duration-300 font-inter font-500 uppercase tracking-[0.05em] text-xs" href="#">Toolkit</a>
+<a class="text-gray-500 hover:text-black transition-colors duration-300 font-inter font-500 uppercase tracking-[0.05em] text-xs" href="#">Writing</a>
+<a class="text-black border-b-2 border-indigo-600 pb-1 font-inter font-500 uppercase tracking-[0.05em] text-xs" href="#">Bookshelf</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-indigo-600 font-inter font-500 uppercase tracking-[0.05em] text-xs active:scale-95 duration-200">
+                    Contact
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-8 max-w-screen-2xl mx-auto">
+<!-- Header Section -->
+<header class="mb-20">
+<div class="inline-block px-3 py-1 bg-indigo-50 text-indigo-600 text-[10px] font-bold uppercase tracking-widest mb-4">
+                Curated Library
+            </div>
+<h1 class="text-6xl md:text-8xl font-black font-space tracking-tighter leading-none mb-6">
+                BOOKSHELF <span class="text-indigo-600">/</span> <br/>THE INTELLIGENCE CURATOR.
+            </h1>
+<p class="text-gray-500 max-w-2xl text-lg font-inter">
+                A selection of foundational texts, visual essays, and technical manuscripts that define my approach to design, engineering, and digital philosophy.
+            </p>
+</header>
+<!-- Bookshelf Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
+<!-- Book 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-6 transition-transform duration-500 group-hover:scale-[1.02]">
+<img alt="Minimalist book cover" class="w-full h-full object-cover" data-alt="Modern minimalist book cover with clean typography on a textured white paper background, soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8SpnMm6RnNmv9iCXfAK_rNWBjwFhqvYc53bpNaP8k90zIfCy8cnCZjnZWgAy3_BHomiXJHXRnD6hrltAXUlAbVlFiWYDA6m6EZpXiq63WaNnD8E_wP08Z05G6dTQJ4wG21xLMuoLByHZODsuEs7MNbNfaiBHDYkUscFVLViEcqhFAqZlhBNFL7vn0XqYgj8IbTcSD0ZdewCsvC_P-tX7wOUyCv1IU82pDejIDW1b9WDN6kQ5kSOWIPXS69TClvCHXlJN_GjronDMD"/>
+</div>
+<h3 class="font-space text-xl font-bold mb-2">Systems of Strategy</h3>
+<p class="text-gray-500 text-sm font-inter line-clamp-2 leading-relaxed">
+                    An exploration into the architectural frameworks that govern modern digital ecosystems and user interaction.
+                </p>
+<div class="mt-4 flex items-center text-indigo-600 gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="text-xs font-bold uppercase tracking-tighter">Read Review</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Book 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-6 transition-transform duration-500 group-hover:scale-[1.02]">
+<img alt="Abstract art book cover" class="w-full h-full object-cover" data-alt="Artistic book cover featuring bold black geometric shapes on a raw linen texture, high-end editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADyGZwokXikz6bVLOfbvA3yKC58gps15jt_F7kmXF52754AXrxJ6yUW6M4NzPgCWsHnStFLzEYdBl5JBI83Lg2NOrJqv8Ro5yu81jbha_48pTs3d6LRT47TXnjzEKVuhSnT2sR8iP1vHgHxI77ggCPG5ONbGMSKPA9PrLe-TlDq6hU7apFUqNbzA7603VMQYnPrZ9vcppGu84-v_GDsY-NRSnbupvJ2ELBuJvrejN3MAuU6xZRo-ZOl_98-NQYL3RyvBRjunKDv0rA"/>
+</div>
+<h3 class="font-space text-xl font-bold mb-2">Visual Logic</h3>
+<p class="text-gray-500 text-sm font-inter line-clamp-2 leading-relaxed">
+                    Deconstructing the relationship between graphic form and cognitive processing in high-density interfaces.
+                </p>
+<div class="mt-4 flex items-center text-indigo-600 gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="text-xs font-bold uppercase tracking-tighter">Read Review</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Book 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-6 transition-transform duration-500 group-hover:scale-[1.02]">
+<img alt="Classic literature" class="w-full h-full object-cover" data-alt="Close-up of a vintage hardbound book with gold foil lettering on a dark blue spine, moody soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFd_SgsTDKPnbEzCoNxLyx2_EBVPlIx1pM3xSCbmeoxEBuP1ejL4pI6DJ7E9Gga8AMgdyYU994OUNyvfuOi8bb5hRJ8RRG6GibNWvmsUTiF0SlwWS-wYcA9yOR5HUGG4HxUdHyR_LRhP2lpX0US63xT4eOgJvqPnfEqTps5vF03ZQIA7PNRO9kTgbDww_UXujWNl6UG2qk8RPVkVf6YDfQl3azwJs8OMQfJDL3PlfXl6j6tr1ujqdwhOk8pTzTkHtmlJjgVrNbEOGO"/>
+</div>
+<h3 class="font-space text-xl font-bold mb-2">The Digital Ethos</h3>
+<p class="text-gray-500 text-sm font-inter line-clamp-2 leading-relaxed">
+                    A philosophical inquiry into the ethics of artificial intelligence and the future of human-centric agency.
+                </p>
+<div class="mt-4 flex items-center text-indigo-600 gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="text-xs font-bold uppercase tracking-tighter">Read Review</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Book 4 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-6 transition-transform duration-500 group-hover:scale-[1.02]">
+<img alt="Green book" class="w-full h-full object-cover" data-alt="Minimalist book with a deep forest green cover resting on a white marble surface, morning sunlight shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmxOhkJs4hOgjkxRPyqvZNgzU69WXb5aaC2v3W7AWMpo4KrXvTmsJXyS1IGn37SU7KVFRHdjlS08Hz8pU5JcYEkLpcSarw5IXGTDfjEma_WSgRlQrONDpqDp2u4O80pt3OJFtziVPhk8pAHb5nTen4sq8nuhz6Nq8trr1dH5Z4dwjeFAvqE0H5hVbooAKBpfNEEvn7Ee9d47I0kFiRq-kABmsiYObL2CPhAcUuWOKjmrIQLl5F2dvzAbRxNFFsU_hx9xhmoWaiorRg"/>
+</div>
+<h3 class="font-space text-xl font-bold mb-2">Grid &amp; Order</h3>
+<p class="text-gray-500 text-sm font-inter line-clamp-2 leading-relaxed">
+                    The definitive guide to Swiss design principles applied to responsive web layouts and typography.
+                </p>
+<div class="mt-4 flex items-center text-indigo-600 gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="text-xs font-bold uppercase tracking-tighter">Read Review</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Book 5 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-6 transition-transform duration-500 group-hover:scale-[1.02]">
+<img alt="Technical manual" class="w-full h-full object-cover" data-alt="Open technical book with intricate diagrams of neural networks on cream paper, professional architectural photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJXxRzsUlylP3yYni_lR9plk9DBu9rsNtzmmh1_9ah_cUvK3VTM8t42BE7VIP6gfJTsePD4Ra-Fz9zROOqLLd9zu1ewgQHAkBt-OPcvKGbUwONNtkkTlZvDU7s-jngIA4WTV9yT8QIeB8Hou8SK1UpQRlvqFrNBm1b9u3xDWft0nVEmaQb4Ys-QpXGDbIh8p2kMSVH0G7mlH4w_yyKxWZ8D14hK0MBlR-ZOXfQS6tMXQzDUoYqWtgcn6zX3h89kZRiVbeNliik0oH8"/>
+</div>
+<h3 class="font-space text-xl font-bold mb-2">Neural Architectures</h3>
+<p class="text-gray-500 text-sm font-inter line-clamp-2 leading-relaxed">
+                    Technical foundations of deep learning and its practical application in generative design workflows.
+                </p>
+<div class="mt-4 flex items-center text-indigo-600 gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="text-xs font-bold uppercase tracking-tighter">Read Review</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Book 6 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-6 transition-transform duration-500 group-hover:scale-[1.02]">
+<img alt="Stack of books" class="w-full h-full object-cover" data-alt="Abstract view of book pages fanning out, creating a repeating pattern of thin lines, monochromatic bright white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgJnr0ZYwCEKJjoMX-BPdPLwdUvbUMtSB0WVbvmDjNzU_4wXiUeP-tpyKt8Kp8JMWh9JiUXqIrN5KtB61v7XEr_IOH-fFmEKowF7qT2-qZ0QCz08YP1iN1IwzXtcN00SfrU4wbxZOe7IRPXuQ4GL1LeXNx2KL1Rs0e6OShga3fKAjX2gv63NYHtf4dBmKYtW4JLRuRBv0PAnV-gym9UnuW8-kZAjsSi-W-fp0hawIoSBTALJ3VPKWgZFQrmOBsU7-oq6ZX1pFxpsVo"/>
+</div>
+<h3 class="font-space text-xl font-bold mb-2">The Monolith Theory</h3>
+<p class="text-gray-500 text-sm font-inter line-clamp-2 leading-relaxed">
+                    Investigating the trend of singular, unified brand identities in a fragmented digital landscape.
+                </p>
+<div class="mt-4 flex items-center text-indigo-600 gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="text-xs font-bold uppercase tracking-tighter">Read Review</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Book 7 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-6 transition-transform duration-500 group-hover:scale-[1.02]">
+<img alt="Design book" class="w-full h-full object-cover" data-alt="Book with a bright orange spine against a neutral grey concrete wall, high contrast and modern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp3lTAlXAzzBfmazc07D7l7QSXlbMdPACghfaRFrVMj2J7SBB-cADjyj3pLR65iB9763dqZIUay-w5296NttA8O3PAfmGbckhG3FzpyRRXQv6IE5TiXxG7dLqpLBnYNhxxLX9jUuWfhefjopBRtOUXCD-g91VZQbDAwmc2GLdDFZsqgwOoD4CNquB_GbDKIsehJeTOcURWQeKU-SI8lc2mcJZSQfJTBt2_TSNI-FIone_KKcaEmRcBBXjt2Ev8OlwP_nGD0_NOEiTa"/>
+</div>
+<h3 class="font-space text-xl font-bold mb-2">Color as Language</h3>
+<p class="text-gray-500 text-sm font-inter line-clamp-2 leading-relaxed">
+                    Understanding the emotional and semiotic impact of palette selection in interface design.
+                </p>
+<div class="mt-4 flex items-center text-indigo-600 gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="text-xs font-bold uppercase tracking-tighter">Read Review</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Book 8 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-neutral-100 overflow-hidden mb-6 transition-transform duration-500 group-hover:scale-[1.02]">
+<img alt="Stacked books" class="w-full h-full object-cover" data-alt="A stack of minimalist white books on a wooden table, soft shadows, airy and peaceful atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_uLUoPsF0SqBxiNkN3p-43rKAtH3LeoP62tgjY-erkiXlStNmslSZ5m3udqrvqQzLFYQmMIPCqE5ePKk31W8msEajCgffR4X7nz4_0aEzeHubM1b3PY81pBQ3G8-F0ehLwJL0S-8azSe7DDMUsFhF2IIVqm4YbuJYdOVrd_OWWSR740EPjL1DyWCr7T3H8FwEslR8AzoBic5Cf9On7vziRuTXgfnKjeas96ZiHRd5PH_SUOzHKUCsuI98KRMOaaCGKyHr7KuJlVL6"/>
+</div>
+<h3 class="font-space text-xl font-bold mb-2">Simplicity Scales</h3>
+<p class="text-gray-500 text-sm font-inter line-clamp-2 leading-relaxed">
+                    How to maintain aesthetic purity while managing extreme functional complexity in software.
+                </p>
+<div class="mt-4 flex items-center text-indigo-600 gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="text-xs font-bold uppercase tracking-tighter">Read Review</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full relative bottom-0 tonal-shift border-t border-black/5">
+<div class="flex flex-col items-center gap-12 py-20 px-8 w-full">
+<div class="max-w-3xl text-center">
+<p class="font-inter italic font-light text-2xl text-black/80 leading-relaxed">
+                    "If it's not fun, it's not worth it—find what sets your soul on fire and chase it relentlessly."
+                </p>
+</div>
+<div class="text-lg font-bold text-black font-space">
+                CURATOR
+            </div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-gray-400 hover:text-indigo-600 transition-all font-inter font-500 uppercase tracking-widest text-[10px] hover:translate-y-[-2px] duration-300" href="#">LinkedIn</a>
+<a class="text-gray-400 hover:text-indigo-600 transition-all font-inter font-500 uppercase tracking-widest text-[10px] hover:translate-y-[-2px] duration-300" href="#">GitHub</a>
+<a class="text-gray-400 hover:text-indigo-600 transition-all font-inter font-500 uppercase tracking-widest text-[10px] hover:translate-y-[-2px] duration-300" href="#">Twitter</a>
+<a class="text-gray-400 hover:text-indigo-600 transition-all font-inter font-500 uppercase tracking-widest text-[10px] hover:translate-y-[-2px] duration-300" href="#">YouTube</a>
+</div>
+<div class="font-inter font-500 uppercase tracking-widest text-[10px] text-gray-400">
+                © 2024 THE EDITORIAL MONOLITH. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>

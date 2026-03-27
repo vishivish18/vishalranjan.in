@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#444749",
+              "tertiary-container": "#727577",
+              "on-error": "#ffffff",
+              "on-tertiary-fixed": "#ffffff",
+              "surface-dim": "#dadada",
+              "on-tertiary": "#e0e3e5",
+              "secondary-fixed-dim": "#ababab",
+              "primary": "#000000",
+              "surface-container": "#eeeeee",
+              "tertiary": "#383c3e",
+              "primary-fixed-dim": "#3323cc",
+              "inverse-surface": "#2f3131",
+              "on-primary-container": "#ffffff",
+              "background": "#f9f9f9",
+              "inverse-on-surface": "#f0f1f1",
+              "surface": "#f9f9f9",
+              "outline": "#777777",
+              "secondary": "#5e5e5e",
+              "surface-variant": "#e2e2e2",
+              "surface-bright": "#f9f9f9",
+              "error-container": "#ffdad6",
+              "secondary-container": "#d4d4d4",
+              "on-surface": "#1a1c1c",
+              "primary-fixed": "#4d44e3",
+              "on-secondary-container": "#1b1b1b",
+              "primary-container": "#2606c2",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#ffffff",
+              "surface-container-highest": "#e2e2e2",
+              "on-secondary-fixed": "#1b1b1b",
+              "on-secondary-fixed-variant": "#3b3b3b",
+              "error": "#ba1a1a",
+              "secondary-fixed": "#c6c6c6",
+              "inverse-primary": "#c3c0ff",
+              "on-primary-fixed-variant": "#e2dfff",
+              "surface-container-low": "#f3f3f4",
+              "on-surface-variant": "#474747",
+              "surface-container-high": "#e8e8e8",
+              "on-secondary": "#ffffff",
+              "tertiary-fixed": "#5c5f61",
+              "on-tertiary-fixed-variant": "#e0e3e5",
+              "on-primary-fixed": "#ffffff",
+              "surface-tint": "#4d44e3",
+              "on-error-container": "#410002",
+              "on-primary": "#e2dfff",
+              "outline-variant": "#c6c6c6",
+              "on-background": "#1a1c1c"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #ffffff;
+            font-family: 'Inter', sans-serif;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2rem;
+        }
+    </style>
+</head>
+<body class="text-on-surface antialiased selection:bg-primary-fixed selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-black/5 shadow-[0_40px_80px_-15px_rgba(0,0,0,0.04)]">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-extrabold tracking-tighter text-black uppercase font-headline">CURATOR</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-black border-b-2 border-indigo-600 pb-1 font-label text-xs font-medium uppercase tracking-[0.05em]" href="#">Content</a>
+<a class="text-gray-500 hover:text-black transition-colors duration-300 font-label text-xs font-medium uppercase tracking-[0.05em]" href="#">Projects</a>
+<a class="text-gray-500 hover:text-black transition-colors duration-300 font-label text-xs font-medium uppercase tracking-[0.05em]" href="#">Experience</a>
+<a class="text-gray-500 hover:text-black transition-colors duration-300 font-label text-xs font-medium uppercase tracking-[0.05em]" href="#">Toolkit</a>
+<a class="text-gray-500 hover:text-black transition-colors duration-300 font-label text-xs font-medium uppercase tracking-[0.05em]" href="#">Writing</a>
+<a class="text-gray-500 hover:text-black transition-colors duration-300 font-label text-xs font-medium uppercase tracking-[0.05em]" href="#">Bookshelf</a>
+</div>
+<button class="bg-gradient-to-br from-primary-fixed to-primary-container text-white px-6 py-2.5 rounded-DEFAULT font-label text-xs font-medium uppercase tracking-widest hover:scale-[0.98] transition-all duration-200">
+                Contact
+            </button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="max-w-screen-2xl mx-auto px-8 mb-40">
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1">
+<span class="inline-block mb-6 font-label text-xs font-medium uppercase tracking-[0.2em] text-primary-fixed">VISHAL RANJAN / AI ENGINEER</span>
+<h1 class="text-7xl md:text-8xl font-headline font-extrabold tracking-tighter leading-[0.9] text-black mb-8">
+                        I BUILD AI PRODUCTS.<br/>
+<span class="text-outline-variant">I DOCUMENT THE JOURNEY.</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed mb-10">
+                        Bridging the gap between cutting-edge neural architectures and practical, human-centric software.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-black text-white px-8 py-4 rounded-DEFAULT font-medium flex items-center gap-3 hover:bg-zinc-800 transition-colors">
+                            View Projects
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="flex-1 w-full max-w-xl">
+<div class="relative aspect-[4/5] overflow-hidden rounded-lg bg-surface-container-low">
+<img alt="Vishal Ranjan" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Professional portrait of a South Asian man in his late 20s, wearing a minimalist black turtleneck, neutral expression, high-contrast studio lighting, sharp focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQTreQ3XHCpShXdpLVJqr9zskFkFRnKONWmmBs6LzREUcvpEyt8SEE5AwrlBLVLLwL25ePBnC_zvgEUjH8cgF1VGAt7K0A-K9QjU3arvWIBath9qotqz726XsGHTSNGgXeo2M9FwHwpMCvSX3RIwPhf0MaulTe5NKBXGCj6KkOhLy7NXmUyqakE3UfueB38uqAvlWdO4vralw3TcopW1ABPs7XqvtaX_25Dyv12mHh9hQHg21Im95oNtaAStGCnckAHVuUyMZFcBFX"/>
+<div class="absolute bottom-6 left-6 right-6 p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-DEFAULT">
+<p class="text-white text-sm font-medium uppercase tracking-widest">Currently Building: Neural Curator v2.0</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section (High Whitespace) -->
+<section class="py-40 bg-surface-container-low/30">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="editorial-grid">
+<div class="col-span-12 md:col-span-4">
+<h2 class="font-label text-xs font-medium uppercase tracking-[0.2em] text-primary-fixed mb-4">THE PHILOSOPHY</h2>
+<h3 class="font-headline text-4xl font-bold tracking-tight text-black">Code is poetry,<br/>AI is the pen.</h3>
+</div>
+<div class="col-span-12 md:col-span-7 md:col-start-6">
+<div class="space-y-8">
+<p class="text-3xl font-light text-on-surface leading-snug">
+                                I believe the most powerful technology should feel invisible. My work focuses on synthesizing complex Large Language Models into interfaces that amplify human potential rather than replacing it.
+                            </p>
+<p class="text-lg text-on-surface-variant leading-relaxed max-w-2xl">
+                                With over 8 years in full-stack engineering and 3 years specialized in generative AI, I've moved past the "can we build it" phase into the "should we build it" paradigm. I build tools for creators, researchers, and builders who care about craft.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Content (YouTube) -->
+<section class="py-40">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex justify-between items-end mb-20">
+<div>
+<h2 class="font-label text-xs font-medium uppercase tracking-[0.2em] text-primary-fixed mb-4">EDUCATION / YOUTUBE</h2>
+<h3 class="font-headline text-5xl font-extrabold tracking-tighter text-black">Latest Insights</h3>
+</div>
+<a class="text-primary-fixed font-medium flex items-center gap-2 hover:underline pb-2" href="#">
+                        View All Videos <span class="material-symbols-outlined">north_east</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Video Card 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-video relative overflow-hidden rounded-DEFAULT bg-surface-container mb-6">
+<img alt="LLM Architecture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Futuristic digital neural network visualization with glowing blue connections on a dark sleek background, cinematic depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRZbuAdR-xBSf3oe0aOjnxBP3CWhrsiyFAxB_o0vmldTIoTn8JMcWbdp3y4iiigITGPBluD22zG0lZWteNEsOtJwzFy5kPyPNnoHdLvr1-iV6F0NDmWfnnQc1QhNPRu6NYq5tndK5kk83OL0JwYld02BzG2LgQ2xuqdNye_4ufXlVLX1BhmQuPJvl3m28-8w6zO6IY5t9G0RFTZIG1XKgE5yeSsCQMQgTh1Aeh741fj8smzGQr_POPaHXth-D7oIcc80sJ7g5i7PUt"/>
+<div class="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-white text-6xl">play_circle</span>
+</div>
+<div class="absolute bottom-4 right-4 bg-black text-white px-2 py-1 text-[10px] font-bold tracking-widest uppercase">14:22</div>
+</div>
+<h4 class="text-xl font-bold text-black mb-2 group-hover:text-primary-fixed transition-colors">Fine-Tuning Llama 3 for Specific UI Contexts</h4>
+<p class="text-on-surface-variant text-sm font-label uppercase tracking-widest">32K Views • 2 Days Ago</p>
+</div>
+<!-- Video Card 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-video relative overflow-hidden rounded-DEFAULT bg-surface-container mb-6">
+<img alt="AI Product Design" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist workspace with a clean laptop and abstract AI art on the wall, soft morning light hitting a marble desk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3mFC0vLVB_cKhxHgF7qDeRSd1P_kNnKB7aAsS4Pg5lfALVq7vqZ_qq2M-sD7WtnVSeTL0FpERcGD7b-lyGP1Sr4hczloDTq-71GVIiZC7z6dWQdJZwjgmPxbXD430jZCqq23JC260hOA8P3vtEHRL1TChL5AXQWxjDgasZ_KgPArKDVBZVRFXnSg0vp5GZUT4bFdBjmmQtpFdOscL90KqaX3hDfEEVeyDcQlOm2UpeWH8LlRVf86Zoqg2z2rXvCsf34MeZczCY9-t"/>
+<div class="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-white text-6xl">play_circle</span>
+</div>
+<div class="absolute bottom-4 right-4 bg-black text-white px-2 py-1 text-[10px] font-bold tracking-widest uppercase">09:45</div>
+</div>
+<h4 class="text-xl font-bold text-black mb-2 group-hover:text-primary-fixed transition-colors">The UX of Generative Interfaces</h4>
+<p class="text-on-surface-variant text-sm font-label uppercase tracking-widest">18K Views • 1 Week Ago</p>
+</div>
+<!-- Video Card 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-video relative overflow-hidden rounded-DEFAULT bg-surface-container mb-6">
+<img alt="Future of AI" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Abstract hardware components of a supercomputer, metallic surfaces reflecting soft neon lights, futuristic high-tech aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNdBJ30YGsGDlxeai-8tneoJVx94X7d2bbDBrDWltczvjhB27Jtbm4J68bRl-X9mmHJB4H5TR4-eHt69q7PvgBJl3rNW8ARj2HR0RTyzVsXrdjAhIQmbsGu_OcnteYtCK5D7IxpFd81o2yF92vPNlBgB0qUyIUshYVJXN39r5Ri_ENcKaVF4_S4wotTO2V1gpMve1Hl_n-Vlxy5hDGhGMQ5bH7MZ-RsLIJyJlzCM4pKPiB1hgI-BpPYomnJyMsf-7n_NaXay9okvYn"/>
+<div class="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-white text-6xl">play_circle</span>
+</div>
+<div class="absolute bottom-4 right-4 bg-black text-white px-2 py-1 text-[10px] font-bold tracking-widest uppercase">22:10</div>
+</div>
+<h4 class="text-xl font-bold text-black mb-2 group-hover:text-primary-fixed transition-colors">Building Agents that actually work</h4>
+<p class="text-on-surface-variant text-sm font-label uppercase tracking-widest">45K Views • 3 Weeks Ago</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Projects (Bento Grid) -->
+<section class="py-40 bg-black text-white">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="mb-20">
+<h2 class="font-label text-xs font-medium uppercase tracking-[0.2em] text-primary-fixed-dim mb-4">ENGINEERING / PROJECTS</h2>
+<h3 class="font-headline text-5xl font-extrabold tracking-tighter">Bento Selects</h3>
+</div>
+<div class="grid grid-cols-12 gap-6 h-[800px]">
+<!-- Large Project -->
+<div class="col-span-12 md:col-span-8 bg-zinc-900 rounded-DEFAULT relative overflow-hidden group">
+<img alt="Nexus AI" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-1000" data-alt="Digital landscape made of data clusters and geometric structures, glowing interconnected nodes in deep space aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRYXK6VQWHa9SpJ-WzSJL_In2QjMYAFDdm6oaoIQWd1sCSGcAtk0z6oNKLUsezJ-CTcSQk214jjIA8i9nMFyNmXh7pm00HOCCUtj3pqLblrZfen0_IdEG4ex57ekBYC8wadPFXZZ38Nxn8d5B3h5g3eHAvE3-Z26iwIxVA_YTzz6kMiw88pltmvfehTQ3ulLa3HcVG63qQ93yJF2gFpDpw9g90LTZ7EnEQgc22pIznt5TBCH33G-kpvBAogb1kCvsC1mWb1cnX9cIg"/>
+<div class="relative z-10 h-full p-12 flex flex-col justify-end">
+<div class="mb-auto flex justify-between">
+<span class="bg-primary-fixed px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest">Featured</span>
+<span class="material-symbols-outlined">north_east</span>
+</div>
+<h4 class="text-4xl font-headline font-extrabold mb-4">Nexus Core v2</h4>
+<p class="max-w-md text-zinc-400 mb-6">A production-ready orchestration layer for multi-agent autonomous systems. Serving 5M+ requests monthly.</p>
+<div class="flex gap-3">
+<span class="text-[10px] border border-zinc-700 px-3 py-1 rounded-full font-label tracking-widest">RUST</span>
+<span class="text-[10px] border border-zinc-700 px-3 py-1 rounded-full font-label tracking-widest">TORCH</span>
+<span class="text-[10px] border border-zinc-700 px-3 py-1 rounded-full font-label tracking-widest">GRPC</span>
+</div>
+</div>
+</div>
+<!-- Vertical Project -->
+<div class="col-span-12 md:col-span-4 bg-zinc-900 rounded-DEFAULT relative overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-b from-indigo-900/20 to-transparent"></div>
+<div class="h-full p-12 flex flex-col">
+<h4 class="text-3xl font-headline font-extrabold mb-4">SynthUI</h4>
+<p class="text-zinc-400 mb-8">Dynamic UI generation framework based on real-time LLM reasoning.</p>
+<img alt="UI Mockup" class="mt-auto w-full rounded-t-lg group-hover:-translate-y-4 transition-transform duration-500" data-alt="Modern web dashboard interface with sleek cards and minimalist graphs, focus on typography and space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOYrVYj-WTMSAEikF5HQKa4lYeLW8wuiGcSqByx-0pBYYAftxd2qDFZhHW2XFtFsCYxTxwVF8QtqUmaFbHE9B_K7cz34x1Bw9EDYcERV1vewgPe-kUs7x9IpG877Dv2Z7DNrsxNSzKRrRlCnbW-dyfYeNFSn4CkpUad8v3afjyclb8mlqs-1waSXq1I3dbwIIt5Zuzeg6-WM-Q6x68m8jRl4XV7ly8y8j4Y5fAgbciMH0XZYccBtAZeYNAz2ylJzoLCF1cq0AJhzbT"/>
+</div>
+</div>
+<!-- Small Project 1 -->
+<div class="col-span-12 md:col-span-4 bg-zinc-900 rounded-DEFAULT p-8 flex flex-col justify-between group cursor-pointer hover:bg-zinc-800 transition-colors">
+<div>
+<h4 class="text-xl font-bold mb-2">PromptGraph</h4>
+<p class="text-zinc-500 text-sm">Visualizing the latent space of vector embeddings.</p>
+</div>
+<div class="flex items-center justify-between mt-8">
+<span class="text-[10px] font-label tracking-widest text-primary-fixed-dim uppercase">Open Source</span>
+<span class="material-symbols-outlined text-zinc-600">arrow_forward</span>
+</div>
+</div>
+<!-- Small Project 2 -->
+<div class="col-span-12 md:col-span-4 bg-zinc-900 rounded-DEFAULT p-8 flex flex-col justify-between group cursor-pointer hover:bg-zinc-800 transition-colors">
+<div>
+<h4 class="text-xl font-bold mb-2">KubeAgi</h4>
+<p class="text-zinc-500 text-sm">Kubernetes operator for local LLM orchestration.</p>
+</div>
+<div class="flex items-center justify-between mt-8">
+<span class="text-[10px] font-label tracking-widest text-primary-fixed-dim uppercase">Active Project</span>
+<span class="material-symbols-outlined text-zinc-600">arrow_forward</span>
+</div>
+</div>
+<!-- Small Project 3 -->
+<div class="col-span-12 md:col-span-4 bg-primary-fixed rounded-DEFAULT p-8 flex flex-col justify-between cursor-pointer hover:bg-primary-container transition-colors">
+<div>
+<h4 class="text-xl font-bold mb-2">Hire Me</h4>
+<p class="text-indigo-200 text-sm">Available for selective AI consulting and architecture projects.</p>
+</div>
+<div class="flex items-center justify-between mt-8">
+<span class="text-[10px] font-label tracking-widest text-white uppercase">Let's talk</span>
+<span class="material-symbols-outlined text-white">mail</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-neutral-50 border-t border-black/5">
+<div class="flex flex-col items-center gap-12 py-20 px-8 w-full max-w-screen-2xl mx-auto">
+<div class="text-lg font-bold text-black font-headline tracking-tighter">CURATOR / VISHAL RANJAN</div>
+<div class="max-w-2xl text-center">
+<blockquote class="text-2xl font-light italic text-on-surface-variant leading-relaxed">
+                    "If it's not fun, it's not worth it—find what sets your soul on fire and chase it relentlessly."
+                </blockquote>
+</div>
+<div class="flex gap-12">
+<a class="text-gray-400 hover:text-indigo-600 hover:translate-y-[-2px] transition-all font-label text-[10px] uppercase tracking-widest font-medium" href="#">LinkedIn</a>
+<a class="text-gray-400 hover:text-indigo-600 hover:translate-y-[-2px] transition-all font-label text-[10px] uppercase tracking-widest font-medium" href="#">GitHub</a>
+<a class="text-gray-400 hover:text-indigo-600 hover:translate-y-[-2px] transition-all font-label text-[10px] uppercase tracking-widest font-medium" href="#">Twitter</a>
+<a class="text-gray-400 hover:text-indigo-600 hover:translate-y-[-2px] transition-all font-label text-[10px] uppercase tracking-widest font-medium" href="#">YouTube</a>
+</div>
+<div class="pt-8 border-t border-black/5 w-full text-center">
+<p class="font-label text-[10px] uppercase tracking-widest text-gray-400">© 2024 THE EDITORIAL MONOLITH. ALL RIGHTS RESERVED.</p>
+</div>
+</div>
+</footer>
+</body></html>
