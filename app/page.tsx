@@ -35,7 +35,7 @@ export default function HomePage() {
                 <img
                   src="/vishal.png"
                   alt="Vishal Ranjan"
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                  className="w-full h-full object-cover hero-image-pulse"
                 />
                 <div className="absolute bottom-6 left-6 right-6 p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded">
                   <p className="text-white text-sm font-medium uppercase tracking-widest">

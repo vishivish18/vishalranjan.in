@@ -11,6 +11,18 @@ body {
   font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
 }
 
+@keyframes colorPulse {
+  0%    { filter: grayscale(0%); }
+  40%   { filter: grayscale(0%); }
+  60%   { filter: grayscale(100%); }
+  80%   { filter: grayscale(0%); }
+  100%  { filter: grayscale(0%); }
+}
+
+.hero-image-pulse {
+  animation: colorPulse 6s ease-in-out infinite;
+}
+
 .editorial-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
