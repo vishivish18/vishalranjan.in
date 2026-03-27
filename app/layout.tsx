@@ -21,8 +21,30 @@ const caveat = Caveat({
 })
 
 export const metadata: Metadata = {
-  title: 'Vishal Ranjan — AI Engineer',
-  description: 'Bridging the gap between cutting-edge neural architectures and practical, human-centric software.',
+  title: 'Vishal Ranjan — Director of AI & Engineering',
+  description: 'Generalist Engineer gone deep on AI. 12+ years building intelligent systems. Experimenting since 2010, shipping production since 2014.',
+  openGraph: {
+    title: 'Vishal Ranjan — Director of AI & Engineering',
+    description: 'Generalist Engineer gone deep on AI. 12+ years building intelligent systems. Experimenting since 2010, shipping production since 2014.',
+    url: 'https://vishalranjan.in',
+    siteName: 'Vishal Ranjan',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1536,
+        height: 768,
+        alt: 'Vishal Ranjan — Obsessed with how things work.',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Vishal Ranjan — Director of AI & Engineering',
+    description: 'Generalist Engineer gone deep on AI. 12+ years building intelligent systems. Experimenting since 2010, shipping production since 2014.',
+    images: ['/og-image.png'],
+    creator: '@vishivish18',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
