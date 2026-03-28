@@ -4,10 +4,10 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 const navItems = [
-  // { label: 'Work', href: '/work' },
-  // { label: 'Writing', href: '/writing' },
-  { label: 'Timeline', href: '/timeline' },
-  { label: 'Bookshelf', href: '/bookshelf' },
+  // { label: 'Work', href: '/work' },         // coming soon
+  // { label: 'Writing', href: '/writing' },    // coming soon
+  // { label: 'Timeline', href: '/timeline' },  // built, not live yet
+  { label: 'Bookshelf', href: '/bookshelf' },   // live, blurred until ready
 ]
 
 export default function Navbar() {

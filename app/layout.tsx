@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Space_Grotesk, Inter, Caveat } from 'next/font/google'
+import CustomCursor from '@/components/CustomCursor'
 import './globals.css'
 
 const spaceGrotesk = Space_Grotesk({
@@ -59,6 +60,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body
         className={`${spaceGrotesk.variable} ${inter.variable} ${caveat.variable} text-on-surface antialiased selection:bg-primary-fixed selection:text-white`}
       >
+        <CustomCursor />
         {children}
       </body>
     </html>

@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import RotatingHeadline from '@/components/RotatingHeadline'
+import HeroImage from '@/components/HeroImage'
 
 
 export default function HomePage() {
@@ -12,11 +13,13 @@ export default function HomePage() {
         <section className="max-w-screen-2xl mx-auto px-8">
           <div className="flex flex-col md:flex-row items-center gap-16">
             <div className="flex-1">
-              <span className="inline-block mb-6 font-label text-xs font-medium uppercase tracking-[0.2em] text-primary-fixed">
+              <span style={{ animationDelay: '0ms' }} className="animate-fade-in-up inline-block mb-6 font-label text-xs font-medium uppercase tracking-[0.2em] text-primary-fixed">
                 VISHAL RANJAN / DIRECTOR OF AI & ENGINEERING
               </span>
-              <RotatingHeadline />
-              <p className="text-sm font-light text-on-surface-variant max-w-xl leading-relaxed mb-10">
+              <div className="animate-fade-in-up" style={{ animationDelay: '120ms' }}>
+                <RotatingHeadline />
+              </div>
+              <p style={{ animationDelay: '240ms' }} className="animate-fade-in-up text-sm font-light text-on-surface-variant max-w-xl leading-relaxed mb-10">
                 Generalist Engineer gone deep on AI. 12+ years building things that actually work,
                 tinkering with machine intelligence since <span className="text-black font-medium">2010</span>,
                 with production scars to prove it since <span className="text-black font-medium">2014</span>.
@@ -29,23 +32,8 @@ export default function HomePage() {
                 </button>
               </div> */}
             </div>
-            <div className="flex-1 w-full max-w-xl">
-              <div className="relative aspect-[4/5] overflow-hidden rounded-lg bg-surface-container-low">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/vishal.png"
-                  alt="Vishal Ranjan"
-                  className="w-full h-full object-cover hero-image-pulse"
-                />
-                <div className="absolute bottom-6 left-6 right-6 p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded">
-                  <p className="text-white text-sm font-medium uppercase tracking-widest">
-                    Currently Building{' '}
-                    <a href="https://digiaccel.in/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:opacity-80 transition-opacity">@Digiaccel</a>
-                    {' '}and{' '}
-                    <a href="https://alterainstitute.com/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:opacity-80 transition-opacity">@Altera</a>
-                  </p>
-                </div>
-              </div>
+            <div style={{ animationDelay: '360ms' }} className="animate-fade-in-up">
+              <HeroImage />
             </div>
           </div>
         </section>
